@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
@@ -42,19 +46,185 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">À propos</a>
+                  <a class="nav-link" href="#skills">Compétences</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Compétences</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
       </header>
+      <section class="intro">
+        <h1 class="fade-in">🚀 Développeur Web</h1>
+      </section>
+      <section id="about" class="glass">
+        <div class="container">
+          <h2>À propos de moi</h2>
+          <p>
+            Je suis un développeur web passionné par la création d'applications
+            web modernes et réactives. J'aime apprendre de nouvelles
+            technologies et relever des défis.
+          </p>
+        </div>
+      </section>
+      <section id="projects">
+        <div id="cardsContainer">
+          <div class="card glass fade-in2" style="width: 18rem">
+            <img
+              src="/images/portfolioWM.png"
+              class="card-img-top"
+              alt="Image portfolioWindowManager"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Window Manager</h5>
+              <p class="card-text">
+                Un portfolio inspiré par le design d'un gestionnaire de fenêtres
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <a
+                href="https://github.com/JimsonLa/portfolioWindowManager"
+                target="_blank"
+                class="btn btn-glassmorphism"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="card glass fade-in2" style="width: 18rem">
+            <img
+              src="/images/todolist.png"
+              class="card-img-top"
+              alt="Image todolist"
+            />
+            <div class="card-body">
+              <h5 class="card-title">WebApp ToDoList</h5>
+              <p class="card-text">WebApp ToDoList avec JavaScript</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <a
+                href="https://github.com/JimsonLa/portfolioWindowManager"
+                target="_blank"
+                class="btn btn-glassmorphism"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+          <div class="card glass fade-in2" style="width: 18rem">
+            <img
+              src="/images/weatherapp.png"
+              class="card-img-top"
+              alt="Image webapp météo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Application Météo</h5>
+              <p class="card-text">
+                Interface météo intuitive avec des prévisions détaillées
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <a
+                href="https://github.com/JimsonLa/portfolioWindowManager"
+                target="_blank"
+                class="btn btn-glassmorphism"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="glass skills-section fade-in">
+        <h2>Compétences</h2>
+        <div class="skills-container">
+          <div class="skills-category">
+            <h3>Frontend</h3>
+            <div class="skills-grid">
+              <div class="skill-pill">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Backend</h3>
+            <div class="skills-grid">
+              <div class="skill-pill">
+                <i class="fas fa-server"></i>
+                <span>Express</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Outils</h3>
+            <div class="skills-grid">
+              <div class="skill-pill">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fab fa-figma"></i>
+                <span>Figma</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fas fa-terminal"></i>
+                <span>CLI</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fab fa-linux"></i>
+                <span>Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="glass">
+        <div id="contactContainer">
+          <p>Envoyez-moi un e-mail !</p>
+          <a href="mailto:jlasselin.pro@gmail.com" class="glass" id="contactBtn"
+            >Envoyer</a
+          >
+        </div>
+      </section>
+      <footer>
+        <section id="footer" class="glass">
+          <span>&copy; 2025 Jimmy Lasselin — Développeur Web</span>
+        </section>
+      </footer>
     </div>
   </body>
 </html>
