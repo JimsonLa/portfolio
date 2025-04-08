@@ -1,0 +1,265 @@
+/* Mobile styles - par défaut */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: linear-gradient(100deg, #ff7e5f, #feb47b);
+  overflow-x: hidden;
+  color: #1a1a1a;
+  height: auto;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(100deg, #ff7e5f, #feb47b);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px); /* pour Safari */
+}
+
+nav {
+  position: fixed;
+  top: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar-brand,
+a.nav-link {
+  color: #1a1a1a;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.fade-in2 {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#about {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 90%;
+}
+
+#cardsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-glassmorphism:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.skills-section {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  width: 90%;
+  justify-self: center;
+}
+
+.skills-container {
+  margin-top: 3rem;
+}
+
+.skills-category {
+  margin-bottom: 3rem;
+}
+
+.skills-category h3 {
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.skills-category h3::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: var(--primary-color);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  transition: all 0.15s ease;
+}
+
+.skill-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.skill-pill i {
+  color: var(--primary-color);
+}
+
+#contact {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+}
+
+#contactBtn {
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 0.5rem;
+}
+
+#contactBtn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+  display: flex;
+  width: 90%;
+  height: 4rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Tablette */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  #about {
+    width: 70%;
+  }
+
+  .custom-card {
+    height: 460px;
+  }
+
+  .custom-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .customPosition {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .customBtn {
+    position: absolute;
+    bottom: 0;
+  }
+
+  #skills {
+    width: 50%;
+  }
+
+  #contact {
+    width: 30%;
+  }
+
+  #footer {
+    width: 30%;
+  }
+}
