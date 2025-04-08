@@ -228,4 +228,38 @@ a.nav-link {
   body {
     font-size: 20px;
   }
+
+  #about {
+    width: 70%;
+  }
+
+  .custom-card {
+    height: 460px;
+  }
+
+  .custom-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .customPosition {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .customBtn {
+    position: absolute;
+    bottom: 0;
+  }
+
+  #skills {
+    width: 50%;
+  }
+
+  #contact {
+    width: 30%;
+  }
+
+  #footer {
+    width: 30%;
+  }
 }
