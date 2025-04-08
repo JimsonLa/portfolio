@@ -124,11 +124,9 @@ a.nav-link {
 
 .skills-section {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   padding-top: 2rem;
   width: 90%;
-  justify-self: center;
 }
 
 .skills-container {
